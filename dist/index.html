@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div id="error"></div>
+  <form id="form">
+    <fieldset class="fieldset">
+      <legend class="legend">Sign in</legend>
+      <div class="user">
+        <label for="name">User Name</label>
+        <input id="name" placeholder="User Name" name="name" type="text" >
+      </div>
+      <div class="password-user">
+        <label for="password">Password</label>
+        <input id="password" placeholder="Password" name="password" type="password">
+      </div>
+      <div class="remember-me">
+        <input type="checkbox" id="remember-me" name="remember-me"/>
+        <label for="remember-me">Remember me</label>
+      </div>
+      <input class="button" type="submit" value="Sign In"/>
+    </fieldset>
+  </form>
+  <script src="bundle.js"></script>
+</body>
+</html>
