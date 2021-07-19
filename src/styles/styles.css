@@ -9,54 +9,67 @@ body {
   font-family: 'Rajdhani', sans-serif;
 }
 
-#form {
-  display: flex;
+#error {
   align-items: center;
   align-content: center;
+  color: lightcoral;
+  display: flex;
+  font-weight: 600;
   justify-content: center;
-  
+  margin: 20px;
+  text-shadow: 1px 1px 2px #292727, 0 0 1em #2e2e38, 0 0 0.2em #242425;
+}
+
+#form {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+
 }
 
 .fieldset {
+  background: #e4e694a1;
+  border: 2px solid #999;
+  border-radius: 6px;
   margin: 32px auto;
   padding: 16px 32px;
-  border:  2px solid #999;
-  border-radius: 6px;
   width: 400px;
-  background: #e4e694a1;
 }
 
 .legend {
+  color: rgb(14, 14, 14);
   font-size: 20px;
   padding: 4px;
-  color: rgb(14, 14, 14);
 }
 
-#name, #password {
-  color: rgb(0, 0, 0);
-  display: block;
-  margin: 5px 0;
-  width: 100%;
-  line-height: 2;
-  border: solid #d2bcf9;
+#name,
+#password {
+  background-color: #c8a6e29c;
   border: solid #d4a9e45e;
   border-radius: 4px;
+  color: rgb(0, 0, 0);
+  display: block;
+  line-height: 2;
+  margin: 5px 0;
   outline-color: rgb(136 145 212 / 93%);
-  background-color: #c8a6e29c;
   padding: 0 5px;
+  width: 100%;
 }
 
 
 .button {
-  text-decoration: none;
+  background-color: rgb(232 148 148 / 60%);
   border: 1px solid rgb(139, 124, 139);
   border-radius: 4px;
-  background-color: rgb(232 148 148 / 60%);
-  padding: 6px;
-  width: 100%;
   cursor: pointer;
+  padding: 6px;
+  text-decoration: none;
+  width: 100%;
 }
 
-.user, .password-user, .remember-me{
+.user,
+.password-user,
+.remember-me {
   padding: 15px 0;
 }
