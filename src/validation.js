@@ -1,5 +1,8 @@
 export function validation (userName, password) {
   const messages = [];
+  if (userName && password) {
+    messages.push('Successful login');
+  }
   if (userName === '' || userName == null) {
     messages.push('Name is required');
   }
@@ -13,4 +16,5 @@ export function validation (userName, password) {
     messages.push('Password cannot be password');
   }
   return messages;
+
 }

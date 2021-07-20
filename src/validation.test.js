@@ -1,5 +1,12 @@
 import { validation } from './validation';
 
+test('should return: [Successful login]', () => {
+  const userName = 'fdfdgdfgd';
+  const password = 'sjkfjsdkf';
+  const message = validation(userName, password);
+  expect(message).toContain('Successful login');
+})
+
 test('should return: [Name is required]', () => {
   const userName = '';
   const password = 'sjkfjsdkf';

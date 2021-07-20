@@ -1,6 +1,7 @@
 import './styles/styles.css';
 import { validation } from './validation';
 
+document.querySelector('.button').addEventListener('click', onClick );
 function onClick (event) {
   const userName = document.getElementById('name');
   const password = document.getElementById('password');
@@ -12,4 +13,3 @@ function onClick (event) {
   }
 }
 
-document.querySelector('.button').addEventListener('click', onClick );
